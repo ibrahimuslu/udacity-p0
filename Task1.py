@@ -3,14 +3,39 @@ Read file into texts and calls.
 It's ok if you don't understand how to read files.
 """
 import csv
+count =0
 with open('texts.csv', 'r') as f:
     reader = csv.reader(f)
     texts = list(reader)
-
+    phoneDict = {}
+    for text in texts:
+        if text[0] not in phoneDict:
+            phoneDict[text[0]]=1
+        else:
+            phoneDict[text[0]]+=1
+        if text[1] not in phoneDict:
+            phoneDict[text[1]]=1
+        else:
+            phoneDict[text[1]]+=1
+    for phone in phoneDict:
+        count+=1
 with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
 
+    phoneDict = {}
+    for call in calls:
+        if call[0] not in phoneDict:
+            phoneDict[call[0]]=1
+        else:
+            phoneDict[call[0]]+=1
+        if call[1] not in phoneDict:
+            phoneDict[call[1]]=1
+        else:
+            phoneDict[call[1]]+=1
+    for phone in phoneDict:
+        count+=1
+    print("There are ",count," different telephone numbers in the records.")
 
 """
 TASK 1:
