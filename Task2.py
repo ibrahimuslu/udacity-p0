@@ -26,7 +26,7 @@ with open('calls.csv', 'r') as f:
         if phoneDict[phone]>longestDuration:
             longestDuration = phoneDict[phone]
             thePhoneNumber = phone
-    print(thePhoneNumber," spent the longest time, ",longestDuration," seconds, on the phone during September 2016.")
+    print("{} spent the longest time, {} seconds, on the phone during September 2016.".format(thePhoneNumber,longestDuration))
 """
 TASK 2: Which telephone number spent the longest time on the phone
 during the period? Don't forget that time spent answering a call is

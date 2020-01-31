@@ -35,7 +35,7 @@ with open('calls.csv', 'r') as f:
             phoneDict[call[1]]+=1
     for phone in phoneDict:
         count+=1
-    print("There are ",count," different telephone numbers in the records.")
+    print("There are {} different telephone numbers in the records.".format(count))
 
 """
 TASK 1:
