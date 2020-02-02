@@ -18,8 +18,6 @@ with open('texts.csv', 'r') as f:
             phoneDict[text[1]]=1
         else:
             phoneDict[text[1]]+=1
-    for phone in phoneDict:
-        count+=1
 with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     calls = list(reader)
