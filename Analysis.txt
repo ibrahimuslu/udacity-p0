@@ -1,0 +1,6 @@
+On each analysis the reader complexity is ignored
+Task 0 - Since there is only one first order loop in the solution The order of the complexity is O(n)
+Task 1 - Since there is only first order 3 loops in the solution The order of the complexity is O(3n) so O(n)
+Task 2 - Again, since there is only first order loops in the solution The order of the complexity is O(n)
+Task 3 - In this solution there is one second order loop in the solution But it doesnt have any relation with input and static to 1000 so The order of the complexity is O(1000n) 
+Task 4 - There is only one first order loop in the solution but the since we dont know sorted function complexity of python we can say The order of the complexity is O(n)
