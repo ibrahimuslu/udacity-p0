@@ -75,3 +75,13 @@ Print the answer as a part of a message::
 to other fixed lines in Bangalore."
 The percentage should have 2 decimal digits
 """
+
+""" Review
+I think the previous reviewer accidentally missed pointing this out. As mentioned in the instructions below on line55 in this file, the area codes for fixed lines vary in length but always start with a 0 and is enclosed between brackets. Currently, the solution just considers the first three digits as the area code for such numbers whereas they can be of any length depending on the number of digits enclosed between the brackets. Like, as can be seen in the calls.csv file, there are fixed line numbers such as:
+(04344)316423 for which the area code will be 04344
+(04546)267875 for which the area code will be 04546
+
+You might find the built-in split() method helpful here.
+
+I can't mark this for re-submission now because the previous reviewer already passed this task, but would highly encourage you to make this correction.
+"""

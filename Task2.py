@@ -36,3 +36,14 @@ Print a message:
 September 2016.".
 """
 
+""" AWESOME
+Correctly computes the time spent on call for each number.
+Note: One other short alternative to filling the dictionary is to make use of get() method to initialize non-existent entries.
+
+call_times = dict()
+
+for call in calls:
+    call_times[call[0]] = call_times.get(call[0], 0) + int(call[3])
+    call_times[call[1]] = call_times.get(call[1], 0) + int(call[3])
+
+"""

@@ -40,3 +40,21 @@ How many different telephone numbers are there in the records?
 Print a message:
 "There are <count> different telephone numbers in the records."
 """
+
+
+""" AWESOME
+Good work correctly finding out all the unique numbers from the data set.
+Note: An alternative, more concise and relatively efficient solution is to use a set as the data structure to store the numbers as sets automatically handle duplicates.
+
+unique_numbers = set()
+
+for call in calls:
+    unique_numbers.add(call[0])
+    unique_numbers.add(call[1])
+
+for text in texts:
+    unique_numbers.add(text[0])
+    unique_numbers.add(text[1])
+
+print("There are {} different telephone numbers in the records.".format(len(unique_numbers)))
+"""
